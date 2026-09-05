@@ -25,7 +25,6 @@ The first day focused on understanding the fundamentals of ASIC design, the comp
 - Conversion of assembly instructions into binary code.
 - Relationship between RTL, synthesized netlist, physical design, and hardware implementation.
 
-![Instruction to Hardware Flow](Images/02_instruction_to_hardware_flow.png)
 
 ---
 
@@ -35,8 +34,8 @@ The first day focused on understanding the fundamentals of ASIC design, the comp
 - Understanding chip-level organization.
 
 ![RISC-V SoC Layout](Images/03_riscv_soc_chip_layout.png)
+<img width="1550" height="711" alt="Screenshot 2026-09-05 174255" src="https://github.com/user-attachments/assets/5a77b2fc-5710-439e-9588-553a0d148641" />
 
----
 
 ### 4. Digital ASIC Design
 ASIC design requires three essential components:
@@ -48,6 +47,8 @@ ASIC design requires three essential components:
 These work together to generate the final ASIC layout.
 
 ![Digital ASIC Design](Images/04_digital_asic_design.png)
+<img width="1550" height="711" alt="Screenshot 2026-09-05 174255" src="https://github.com/user-attachments/assets/71011f1c-8815-4497-93ae-599cc53292dd" />
+
 
 ---
 
@@ -61,6 +62,8 @@ The open-source ASIC ecosystem consists of:
 These components together enable complete ASIC implementation.
 
 ![Open Source ASIC Ecosystem](Images/05_open_source_asic_ecosystem.png)
+<img width="1550" height="711" alt="Screenshot 2026-09-05 174255" src="https://github.com/user-attachments/assets/679f5a76-3d63-40eb-815a-c6fa66e5ed7e" />
+
 
 ---
 
@@ -76,6 +79,8 @@ It includes:
 - Technology Files
 
 ![Process Design Kit](Images/06_process_design_kit_pdk.png)
+<img width="1055" height="436" alt="Screenshot 2026-09-05 174713" src="https://github.com/user-attachments/assets/c99ce912-790a-475f-8ca8-e3977c3c740c" />
+
 
 ---
 
@@ -93,6 +98,8 @@ EDA (Electronic Design Automation) tools automate different stages of ASIC desig
 - Sign-off
 
 ![EDA Tools](Images/07_eda_tools_overview.png)
+<img width="1080" height="582" alt="Screenshot 2026-09-05 174756" src="https://github.com/user-attachments/assets/0bde5834-4152-4d5d-b68e-f71ee8ece881" />
+
 
 ---
 
@@ -110,6 +117,8 @@ The RTL-to-GDSII flow consists of:
 The final output is the GDSII layout file used for fabrication.
 
 ![RTL to GDSII Flow](Images/08_rtl_to_gdsii_flow.png)
+<img width="1213" height="562" alt="Screenshot 2026-09-05 174826" src="https://github.com/user-attachments/assets/3720342a-e695-4f21-83f6-97cad3ad5635" />
+
 
 ---
 
@@ -119,13 +128,14 @@ OpenLANE is an open-source automated RTL-to-GDSII flow designed for ASIC impleme
 Its goal is to generate manufacturable layouts with minimal manual intervention.
 
 ![OpenLANE Introduction](Images/09_openlane_introduction.png)
+<img width="1213" height="562" alt="Screenshot 2026-09-05 174826" src="https://github.com/user-attachments/assets/a2d2e78a-748a-4a7d-a0a9-49092e675d28" />
+
 
 ---
 
 ### 10. OpenLANE ASIC Flow
 OpenLANE integrates synthesis, floorplanning, placement, CTS, routing, and sign-off into one automated flow.
 
-![OpenLANE ASIC Flow](Images/10_openlane_asic_flow.png)
 
 ---
 
@@ -138,8 +148,12 @@ It mainly includes:
 - Layout Versus Schematic (LVS)
 
 These checks validate both manufacturability and functional correctness.
+<img width="1213" height="562" alt="Screenshot 2026-09-05 174826" src="https://github.com/user-attachments/assets/c8358f89-eb0a-469d-b96a-5d0cd4279633" />
+<img width="1213" height="562" alt="Screenshot 2026-09-05 174826" src="https://github.com/user-attachments/assets/16590261-ec87-4814-b18e-a7d48df0771d" />
 
-![Physical Verification](Images/11_drc_lvs_physical_verification.png)
+<img width="1213" height="562" alt="Screenshot 2026-09-05 174826" src="https://github.com/user-attachments/assets/b6792d25-e1e8-4f45-b52a-e24d6a400192" />
+
+
 
 ---
 
