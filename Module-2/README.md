@@ -304,10 +304,10 @@ cd runs/<run_name>/results/placement
 - Static Timing Analysis (STA)
 - Physical Verification
 - Layout Visualization using Magic
-- 
+  
 - <img width="958" height="930" alt="image" src="https://github.com/user-attachments/assets/29832c87-bbb5-4171-805b-fae8e6d06c31" />
 
-- 
+  
 
 
 # Workshop Highlights
@@ -354,7 +354,6 @@ OpenSTA was used to perform timing analysis on a sample Verilog design. The stan
 
 ### Commands Used
 
-```tcl
 read_liberty /OpenSTA/examples/nangate45_slow.lib.gz
 
 read_verilog /OpenSTA/examples/example1.v
@@ -366,7 +365,6 @@ create_clock -name clk -period 10 {clk}
 set_input_delay -clock clk 0 {in1 in2}
 
 report_checks
-```
 
 ### Observation
 
