@@ -62,7 +62,8 @@ The open-source ASIC ecosystem consists of:
 These components together enable complete ASIC implementation.
 
 ![Open Source ASIC Ecosystem](Images/05_open_source_asic_ecosystem.png)
-<img width="1550" height="711" alt="Screenshot 2026-09-05 174255" src="https://github.com/user-attachments/assets/679f5a76-3d63-40eb-815a-c6fa66e5ed7e" />
+<img width="981" height="537" alt="Screenshot 2026-09-05 174535" src="https://github.com/user-attachments/assets/c623acf9-717a-4325-baef-c8b16fc118f3" />
+
 
 
 ---
@@ -149,9 +150,12 @@ It mainly includes:
 
 These checks validate both manufacturability and functional correctness.
 <img width="1213" height="562" alt="Screenshot 2026-09-05 174826" src="https://github.com/user-attachments/assets/c8358f89-eb0a-469d-b96a-5d0cd4279633" />
-<img width="1213" height="562" alt="Screenshot 2026-09-05 174826" src="https://github.com/user-attachments/assets/16590261-ec87-4814-b18e-a7d48df0771d" />
+<img width="1157" height="632" alt="Screenshot 2026-09-05 175112" src="https://github.com/user-attachments/assets/f6aed217-f33c-44a1-bc11-5ffc9662b5ae" />
 
-<img width="1213" height="562" alt="Screenshot 2026-09-05 174826" src="https://github.com/user-attachments/assets/b6792d25-e1e8-4f45-b52a-e24d6a400192" />
+<img width="1122" height="542" alt="Screenshot 2026-09-05 175227" src="https://github.com/user-attachments/assets/7f17d5fb-29b0-451a-ab06-14779cf222d0" />
+<img width="1122" height="542" alt="Screenshot 2026-09-05 175227" src="https://github.com/user-attachments/assets/42678b86-3cc8-4c32-a6e9-3b01e65e49a4" />
+
+<img width="1122" height="542" alt="Screenshot 2026-09-05 175227" src="https://github.com/user-attachments/assets/fc486ca2-22e8-46b9-87ea-777ba58bf85f" />
 
 
 
