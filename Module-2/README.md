@@ -218,86 +218,67 @@ In this session, I learned the importance of floorplanning in ASIC physical desi
 ## Important Commands Used
 
 ### Launch Docker
-
-```bash
 docker
-```
+
 
 ### Navigate to OpenLANE Directory
 
-```bash
 cd Desktop/work/tools/openlane_working_dir/openlane
-```
+
 
 ### Start Interactive OpenLANE
 
-```bash
 ./flow.tcl -interactive
-```
+
 
 ### Load OpenLANE Package
 
-```tcl
+tcl
 package require openlane 0.9
-```
+
 
 ### Prepare Design
-
-```tcl
 prep -design picorv32a
-```
+
 
 ### Run Synthesis
-
-```tcl
 run_synthesis
-```
+
 
 ### Run Floorplan
-
-```tcl
 run_floorplan
-```
 
 ### Run Placement
-
-```tcl
 run_placement
-```
+
 
 ### View Floorplan in Magic
 
-```bash
+
 magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech \
 drc read results/floorplan/picorv32a.floorplan.def &
-```
 
 ### View Placement Layout
 
-```bash
+`
 magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech \
 drc read results/placement/picorv32a.placement.def &
-```
 
 ### View Generated Reports
 
-```bash
+
 cd runs/<run_name>/reports
-```
+
 
 ### View Floorplan Results
 
-```bash
 cd runs/<run_name>/results/floorplan
-```
+
 
 ### View Placement Results
 
-```bash
 cd runs/<run_name>/results/placement
-```
 
----
 
 ## Files Generated
 
