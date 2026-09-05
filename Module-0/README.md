@@ -1,3 +1,9 @@
+# Module-0
+# table of Contents
+
+- [SKY130_D1_SK1 – How to Talk to Computers](#sky130_d1_sk1---how-to-talk-to-computers)
+- [SKY130_D1_SK2 – SoC Design and OpenLANE](#sky130_d1_sk2---soc-design-and-openlane)
+
 #   Introduction to OpenLANE and ASIC Design Flow
 
 ## 1. Introduction to ASIC Design
