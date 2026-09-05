@@ -53,6 +53,3 @@ This repository contains my implementation and documentation of the VSD Physical
 - Timing Analysis
 - Layout Verification
 
-##  Reference
-
-https://github.com/vsdip/vsd-openlane
