@@ -9,9 +9,6 @@
 
 This repository contains my implementation and documentation of the VSD Physical Design Workshop using OpenLane and the Sky130 PDK. It demonstrates the complete RTL-to-GDSII ASIC design flow using open-source EDA tools.
 
-##  Author
-
-**Sushmitha Konda**
 
 ##  Tools Used
 
@@ -52,4 +49,8 @@ This repository contains my implementation and documentation of the VSD Physical
 - Physical Design Concepts
 - Timing Analysis
 - Layout Verification
+
+- ##  Author
+
+**Sushmitha Konda**
 
