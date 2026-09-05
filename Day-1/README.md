@@ -14,6 +14,9 @@ The first day focused on understanding the fundamentals of ASIC design, the comp
 - How machine instructions are executed by the processor hardware.
 
 ![Software to Hardware Flow](Images/01_system_software_hardware_overview.png)
+<img width="1550" height="711" alt="Screenshot 2026-09-05 174255" src="https://github.com/user-attachments/assets/75b8d4e8-45ce-41ef-832c-8f5d1368f5fe" />
+
+
 
 ---
 
