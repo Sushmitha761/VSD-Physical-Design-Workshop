@@ -1,4 +1,4 @@
-# DAY 1 - Introduction to OpenLANE and ASIC Design Flow
+#   Introduction to OpenLANE and ASIC Design Flow
 
 ## 1. Introduction to ASIC Design
 
