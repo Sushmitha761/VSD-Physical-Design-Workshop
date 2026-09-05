@@ -8,6 +8,9 @@ The **designs** directory contains the RTL source files, configuration files, an
 
 ![OpenLANE Directory](images/day1/openlane_directory.png)
 file:///home/vsduser/Pictures/Screenshot%20from%202026-09-04%2023-41-31.png<img width="1920" height="940" alt="image" src="https://github.com/user-attachments/assets/e09939b9-91f8-4b2e-ad50-4cb44c49225a" />
+<img width="866" height="197" alt="Screenshot 2026-09-04 230533" src="https://github.com/user-attachments/assets/038b47b5-318c-417d-85fc-3d0224593564" />
+<img width="1081" height="710" alt="Screenshot 2026-09-05 013015" src="https://github.com/user-attachments/assets/4ad1dc93-c405-4015-9e74-c4f4d19b92f6" />
+
 
 
 ---
@@ -28,7 +31,8 @@ After successful execution, OpenLANE creates a new run directory where all inter
 
 ![Design Preparation](images/day1/design_preparation.png)
 
-file:///home/vsduser/Pictures/Screenshot%20from%202026-09-05%2010-52-45.png![Uploading image.png…]()
+file:///home/vsduser/Pictures/Screenshot%20from%202026-09-05%2010-52-45.png<img width="958" height="930" alt="image" src="https://github.com/user-attachments/assets/4da17259-a3d9-42b1-af3b-5bd62cab9d46" />
+
 
 ---
 
@@ -39,6 +43,11 @@ Once synthesis is completed, OpenLANE automatically generates several files and 
 ### Screenshot - Review Files After Design Preparation and Synthesis
 
 ![Review Files](images/day1/review_files.png)
+1.file:///home/vsduser/Pictures/Screenshot%20from%202026-09-05%2011-20-56.png<img width="958" height="930" alt="image" src="https://github.com/user-attachments/assets/ef508de1-5115-475a-82a4-fddad55fdb8d" />
+2.<img width="935" height="908" alt="Screenshot 2026-09-05 111618" src="https://github.com/user-attachments/assets/ae11c158-90af-4d8d-94f6-dde36c9fedf0" />
+3.file:///home/vsduser/Pictures/Screenshot%20from%202026-09-05%2011-12-15.png<img width="958" height="930" alt="image" src="https://github.com/user-attachments/assets/977dfd81-632b-4cf4-a259-3ce0ffcd0726" />
+
+
 
 ---
 
@@ -49,7 +58,7 @@ The GitHub repository also provides examples for running synthesis, floorplannin
 ### Screenshot - OpenLANE GitHub Repository
 
 ![OpenLANE GitHub](images/day1/openlane_github.png)
-
+https://github.com/Sushmitha761/VSD-Physical-Design-Workshop/edit/main/Module-1/README.md
 ---
 
 Finally, the synthesis results were analyzed by reviewing the generated reports. Important parameters such as **cell count**, **chip area**, **logic utilization**, **timing information**, and **optimization statistics** were examined. These reports confirm that the RTL design has been successfully synthesized into a gate-level netlist and is ready for the next stage of the physical design flow, which is floorplanning.
@@ -58,7 +67,9 @@ Analyzing synthesis reports is an important step because it provides an early in
 
 ### Screenshot - Synthesis Results
 
-![Synthesis Results](images/day1/synthesis_results.png)
+![Synthesis Results](images/day1/synthesis_results.png)<img width="1916" height="981" alt="Screenshot 2026-09-05 014417" src="https://github.com/user-attachments/assets/93bdefa2-2798-41d2-b87b-266053cee086" />
+
+
 
 ---
 
