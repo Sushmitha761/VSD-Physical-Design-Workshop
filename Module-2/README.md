@@ -158,6 +158,37 @@ Cell design requires transistor models, design rules, technology files, layout g
 <img width="1242" height="700" alt="Screenshot 2026-09-05 212859" src="https://github.com/user-attachments/assets/e811f795-1b01-4f8f-bb5d-101f30580908" />
 
 
+# SKY130_D2_SK4 - General Timing Characterization Parameters
+
+General timing characterization is used to determine the timing behavior of standard cells under different operating conditions. During characterization, important timing parameters such as propagation delay, transition time, setup time, hold time, rise time, and fall time are measured. These values are stored in Liberty (.lib) files, which are later used by synthesis and Static Timing Analysis (STA) tools to verify the timing performance of the design.
+
+---
+
+## 1. Timing Threshold Definitions
+
+Timing thresholds define the voltage levels at which signal transitions are measured. Commonly, rise and fall times are measured between 20% and 80% of the supply voltage, while propagation delay is calculated between the 50% transition points of the input and output signals. Standardized threshold definitions ensure consistent timing measurements.
+
+**Observation:** Standard timing thresholds provide accurate and consistent delay measurements for all standard cells.
+
+---
+
+## 2. Propagation Delay and Transition Time
+
+Propagation delay is the time taken for a change at the input of a logic gate to appear at its output. Transition time (slew) represents the duration required for a signal to change from logic low to logic high or vice versa. These parameters are critical for evaluating the speed and performance of digital circuits.
+
+**Observation:** Lower propagation delay and faster transition time improve the overall timing performance of the design.
+
+---
+
+## 3. Cell Delay and Slew Calculations
+
+Cell delay depends on input transition time, output load capacitance, and transistor characteristics. During characterization, delay and slew values are calculated for different combinations of input slew and output load. These values are stored as lookup tables in the Liberty (.lib) file for accurate timing analysis.
+
+**Observation:** Accurate delay and slew calculations enable reliable synthesis, timing optimization, and Static Timing Analysis (STA).
+
+---
+
+
 ## Conclusion
 
 In this session, I learned the importance of floorplanning in ASIC physical design. I understood how utilization factor, aspect ratio, macro placement, decoupling capacitors, power planning, and pin placement affect the quality of the final layout. Using OpenLANE and Magic, I successfully generated and verified the floorplan, establishing a strong foundation for the placement stage in the ASIC implementation flow.
