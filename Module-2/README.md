@@ -192,3 +192,233 @@ Cell delay depends on input transition time, output load capacitance, and transi
 ## Conclusion
 
 In this session, I learned the importance of floorplanning in ASIC physical design. I understood how utilization factor, aspect ratio, macro placement, decoupling capacitors, power planning, and pin placement affect the quality of the final layout. Using OpenLANE and Magic, I successfully generated and verified the floorplan, establishing a strong foundation for the placement stage in the ASIC implementation flow.
+
+
+
+
+
+# Commands and Tools:
+
+## Tools Used
+
+- **Ubuntu 20.04 LTS** – Linux operating system used for the workshop.
+- **Docker** – Container platform used to run the OpenLANE environment.
+- **OpenLANE** – Open-source RTL-to-GDSII ASIC implementation flow.
+- **Sky130 PDK** – Process Design Kit used for ASIC design.
+- **Yosys** – Logic synthesis tool.
+- **Magic VLSI** – Layout viewer, DRC, and extraction tool.
+- **OpenROAD** – Physical design tool for floorplanning, placement, CTS, and routing.
+- **OpenSTA** – Static Timing Analysis (STA) tool.
+- **Netgen** – Layout Versus Schematic (LVS) verification.
+- **Git & GitHub** – Version control and documentation.
+- **VS Code / Terminal** – Used for editing files and executing commands.
+
+---
+
+## Important Commands Used
+
+### Launch Docker
+
+```bash
+docker
+```
+
+### Navigate to OpenLANE Directory
+
+```bash
+cd Desktop/work/tools/openlane_working_dir/openlane
+```
+
+### Start Interactive OpenLANE
+
+```bash
+./flow.tcl -interactive
+```
+
+### Load OpenLANE Package
+
+```tcl
+package require openlane 0.9
+```
+
+### Prepare Design
+
+```tcl
+prep -design picorv32a
+```
+
+### Run Synthesis
+
+```tcl
+run_synthesis
+```
+
+### Run Floorplan
+
+```tcl
+run_floorplan
+```
+
+### Run Placement
+
+```tcl
+run_placement
+```
+
+### View Floorplan in Magic
+
+```bash
+magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech \
+drc read results/floorplan/picorv32a.floorplan.def &
+```
+
+### View Placement Layout
+
+```bash
+magic -T ~/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech \
+drc read results/placement/picorv32a.placement.def &
+```
+
+### View Generated Reports
+
+```bash
+cd runs/<run_name>/reports
+```
+
+### View Floorplan Results
+
+```bash
+cd runs/<run_name>/results/floorplan
+```
+
+### View Placement Results
+
+```bash
+cd runs/<run_name>/results/placement
+```
+
+---
+
+## Files Generated
+
+- Synthesized Netlist (.v)
+- DEF Files
+- LEF Files
+- Liberty (.lib) Files
+- Floorplan Reports
+- Placement Reports
+- Log Files
+- Magic Layout Files
+
+---
+
+## Skills Gained
+
+- ASIC Design Flow
+- RTL to GDSII Implementation
+- Logic Synthesis
+- Floorplanning
+- Standard Cell Placement
+- Library Characterization
+- Static Timing Analysis (STA)
+- Physical Verification
+- Layout Visualization using Magic
+- 
+- <img width="958" height="930" alt="image" src="https://github.com/user-attachments/assets/29832c87-bbb5-4171-805b-fae8e6d06c31" />
+
+- 
+
+
+# Workshop Highlights
+
+Throughout this workshop, I gained hands-on experience with the complete OpenLANE RTL-to-GDSII ASIC design flow using the Sky130 PDK. I learned how open-source EDA tools work together to convert an RTL design into a manufacturable chip layout.
+
+I successfully installed and configured the required design environment, built Docker images, and executed OpenLANE and OpenSTA commands inside Docker containers. This workshop provided practical exposure to ASIC physical design concepts such as floorplanning, placement, clock tree synthesis (CTS), routing, timing analysis, and physical verification.
+
+## Docker Environment Setup
+
+The OpenSTA repository was cloned from GitHub and Docker was used to build the required environment. After verifying the Docker installation, the OpenSTA Docker image was successfully created and executed.
+
+### Commands Used
+
+```bash
+git clone https://github.com/parallaxsw/OpenSTA.git
+
+docker --version
+
+docker build --file Dockerfile.ubuntu22.04 --tag opensta .
+
+sudo docker run -it -v $HOME:/data opensta
+```
+
+### Observation
+
+- Successfully cloned the OpenSTA repository.
+- Verified Docker installation.
+- Built the OpenSTA Docker image.
+- Started the Docker container successfully.
+- Prepared the timing analysis environment.
+
+### Screenshot
+
+![Docker Build](images/day2/docker_build.png)
+<img width="1200" height="1600" alt="WhatsApp Image 2026-09-05 at 10 37 06 PM" src="https://github.com/user-attachments/assets/7f8272a3-bba8-4f63-97ca-81a755287b4a" />
+
+
+---
+
+## Static Timing Analysis using OpenSTA
+
+OpenSTA was used to perform timing analysis on a sample Verilog design. The standard cell library was loaded, the design was linked, clock constraints were created, and timing reports were generated to verify setup timing.
+
+### Commands Used
+
+```tcl
+read_liberty /OpenSTA/examples/nangate45_slow.lib.gz
+
+read_verilog /OpenSTA/examples/example1.v
+
+link_design top
+
+create_clock -name clk -period 10 {clk}
+
+set_input_delay -clock clk 0 {in1 in2}
+
+report_checks
+```
+
+### Observation
+
+- Loaded the Liberty timing library successfully.
+- Imported the Verilog netlist.
+- Linked the top-level design.
+- Created the design clock.
+- Applied input delay constraints.
+- Generated setup timing reports.
+- Verified data arrival time, required time, and timing slack.
+
+### Screenshot
+
+![OpenSTA Timing Report](images/day2/opensta_report.png)
+
+---
+
+## Skills Acquired
+
+- Linux command-line operations
+- Docker container management
+- OpenSTA timing analysis
+- Liberty library loading
+- Verilog design linking
+- Clock constraint creation
+- Timing report analysis
+- Understanding setup timing and slack
+- Open-source ASIC design flow
+- Practical exposure to RTL-to-GDSII implementation
+
+
+## Author
+
+**Sushmitha Konda**
+
+GitHub: https://github.com/Sushmitha761
