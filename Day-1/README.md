@@ -34,7 +34,8 @@ The first day focused on understanding the fundamentals of ASIC design, the comp
 - Understanding chip-level organization.
 
 ![RISC-V SoC Layout](Images/03_riscv_soc_chip_layout.png)
-<img width="1550" height="711" alt="Screenshot 2026-09-05 174255" src="https://github.com/user-attachments/assets/5a77b2fc-5710-439e-9588-553a0d148641" />
+<img width="981" height="537" alt="Screenshot 2026-09-05 174535" src="https://github.com/user-attachments/assets/54476a21-4783-4a7f-a018-9a54d55b8698" />
+
 
 
 ### 4. Digital ASIC Design
@@ -47,7 +48,6 @@ ASIC design requires three essential components:
 These work together to generate the final ASIC layout.
 
 ![Digital ASIC Design](Images/04_digital_asic_design.png)
-<img width="1550" height="711" alt="Screenshot 2026-09-05 174255" src="https://github.com/user-attachments/assets/71011f1c-8815-4497-93ae-599cc53292dd" />
 
 
 ---
