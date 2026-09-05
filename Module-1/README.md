@@ -1,3 +1,15 @@
+# Module-1
+
+# Table of Content
+
+## Module 1 – Inception of Open-Source EDA, OpenLANE and Sky130 PDK
+
+
+- [SKY130_D1_SK3 – Get Familiar to Open-Source EDA Tools](#sky130_d1_sk3---get-familiar-to-open-source-eda-tools)
+
+
+
+
 # SKY130_D1_SK3 - Get Familiar with Open-Source EDA Tools
 
 In this session, I explored the OpenLANE environment and understood how the project is organized. OpenLANE follows a structured directory hierarchy where each folder is dedicated to a specific stage of the ASIC physical design flow. Understanding this directory structure is important because it allows designers to locate generated reports, logs, configuration files, and design outputs efficiently.
