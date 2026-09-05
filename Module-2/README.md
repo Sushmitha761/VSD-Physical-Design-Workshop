@@ -149,6 +149,8 @@ Congestion-aware placement predicts routing congestion before routing begins and
 Cell design requires transistor models, design rules, technology files, layout guidelines, and circuit specifications. These inputs are used to design, verify, and characterize standard cells before they are included in the ASIC design flow.
 
 **Observation:** Proper design inputs ensured accurate standard cell implementation and successful characterization.
+<img width="1242" height="700" alt="Screenshot 2026-09-05 212859" src="https://github.com/user-attachments/assets/e811f795-1b01-4f8f-bb5d-101f30580908" />
+
 
 ## Conclusion
 
