@@ -126,10 +126,7 @@ The final output is the GDSII layout file used for fabrication.
 ### 9. OpenLANE
 OpenLANE is an open-source automated RTL-to-GDSII flow designed for ASIC implementation using the SkyWater130 PDK.
 
-Its goal is to generate manufacturable layouts with minimal manual intervention.
-
-![OpenLANE Introduction](Images/09_openlane_introduction.png)
-<img width="1213" height="562" alt="Screenshot 2026-09-05 174826" src="https://github.com/user-attachments/assets/a2d2e78a-748a-4a7d-a0a9-49092e675d28" />
+Its goal is to generate manufacturable layouts with minimal manual intervention
 
 
 ---
